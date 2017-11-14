@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=2&playlistId=PLzrVYRai0riSRJ3M3bifVWWRq5eJMu6tv&key=AIzaSyBGGktHD0BJXnFJuGXe7oLR7DBj9hBbY3A
     }
 }
