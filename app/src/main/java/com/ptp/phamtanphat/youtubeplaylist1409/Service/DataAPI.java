@@ -1,5 +1,7 @@
 package com.ptp.phamtanphat.youtubeplaylist1409.Service;
 
+import com.ptp.phamtanphat.youtubeplaylist1409.Model.YoutubeAPI;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -11,7 +13,10 @@ import retrofit2.http.Query;
  */
 
 public interface DataAPI {
-//  playlistItems?part=snippet&maxResults=2&playlistId=PLzrVYRai0riSRJ3M3bifVWWRq5eJMu6tv&key=AIzaSyBGGktHD0BJXnFJuGXe7oLR7DBj9hBbY3A
+
     @GET("playlistItems")
-    Call<List<Item>> getdata(@Query("part") String part ,@Query("maxResults") String maxresult);
+    Call<YoutubeAPI> getdata(@Query("part") String part
+            , @Query("maxResults") String maxresult
+            , @Query("playlistId") String playlistId
+            , @Query("key") String key);
 }

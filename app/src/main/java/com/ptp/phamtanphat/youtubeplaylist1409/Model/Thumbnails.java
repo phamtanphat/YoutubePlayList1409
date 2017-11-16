@@ -9,7 +9,6 @@ public class Thumbnails {
 @Expose
 private Default _default;
 
-private Maxres maxres;
 
 public Default getDefault() {
 return _default;
@@ -19,12 +18,5 @@ public void setDefault(Default _default) {
 this._default = _default;
 }
 
-public Maxres getMaxres() {
-return maxres;
-}
-
-public void setMaxres(Maxres maxres) {
-this.maxres = maxres;
-}
 
 }
